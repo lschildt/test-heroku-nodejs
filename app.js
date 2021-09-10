@@ -1,11 +1,9 @@
 const express = require('express')
+
 const app = express()
-const PORT = process.env.PORT || 5000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.status(200).json('Hello world')
 })
 
-app.listen(PORT, () => {
-  console.log(`Example app listening at http://localhost:${PORT}`)
-})
+module.exports = app.listen(4001, () => console.log(`Running on http://localhost:4001`))
