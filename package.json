@@ -23,5 +23,11 @@
   "devDependencies": {
     "jest": "^27.1.1",
     "supertest": "^6.1.6"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
